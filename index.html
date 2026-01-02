@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.container{
+  width:90%;
+  max-width:900px;
+  text-align:center;
+  color:white;
+}
+
+.container h1{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.container p{
+  opacity:0.9;
+  margin-bottom:40px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  color:#333;
+  padding:30px 20px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.icon{
+  font-size:50px;
+  margin-bottom:15px;
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  font-size:15px;
+  color:#555;
+  margin-bottom:20px;
+}
+
+.card a{
+  display:inline-block;
+  text-decoration:none;
+  padding:10px 20px;
+  border-radius:25px;
+  color:white;
+  font-weight:bold;
+}
+
+/* WhatsApp */
+.wa .icon{color:#25D366;}
+.wa a{background:#25D366;}
+
+/* Email */
+.email .icon{color:#EA4335;}
+.email a{background:#EA4335;}
+
+.back{
+  display:inline-block;
+  margin-top:40px;
+  color:white;
+  text-decoration:none;
+  opacity:0.85;
+}
+.back:hover{opacity:1;}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Contact Us</h1>
+  <p>Choose one of the options below to get in touch with us</p>
+
+  <div class="cards">
+
+    <!-- WhatsApp Card -->
+    <div class="card wa">
+      <div class="icon">📱</div>
+      <h3>WhatsApp</h3>
+      <p>Chat with us directly via WhatsApp</p>
+      <a href="https://api.whatsapp.com/send?phone=67074999806" target="_blank">
+        Contact via WhatsApp
+      </a>
+    </div>
+
+    <!-- Email Card -->
+    <div class="card email">
+      <div class="icon">✉️</div>
+      <h3>Email</h3>
+      <p>Send us a message via email</p>
+      <a href="mailto:rejuhornay2010@gmail.com" target="_blank">
+        Contact via Email
+      </a>
+    </div>
+</body>
+</html>
