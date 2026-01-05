@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontaktu Ami</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-container {
+      background: white;
+      width: 90%;
+      max-width: 420px;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .contact-container h1 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact-container p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #f4f6f8;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      transition: 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: scale(1.03);
+      background: #e9f3ff;
+    }
+
+    .icon {
+      font-size: 26px;
+    }
+
+    .contact-info {
+      text-align: left;
+    }
+
+    .contact-info span {
+      display: block;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .contact-info a:hover {
+      color: #007bff;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="contact-container">
+    <h1>Kontaktu Ami</h1>
+    <p>Favor kontaktu ami liu husi WhatsApp ka Email</p>
+
+    <div class="contact-card">
+      <div class="icon">📱</div>
+      <div class="contact-info">
+        <span>WhatsApp</span>
+        <a href="https://wa.me/74999806" target="_blank">
+          +670 7499 9806
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">📧</div>
+      <div class="contact-info">
+        <span>Email</span>
+        <a href="mailto:rejuhornay2010@gmail.com">
+          rejuhornay2010@gmail.com
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 Kontaktu Ami
+    </footer>
+  </div>
+
+</body>
+</html>
